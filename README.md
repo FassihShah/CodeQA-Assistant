@@ -68,8 +68,10 @@ streamlit run app.py
 ## 📂 Supported File Types
 
 CodeQA currently loads the following file types from the repo:
--  .py, .ipynb, .js, .ts, .cpp, .c, .cs, .html, .md, .java, .h, .cshtml, .kt
 
+```bash
+-  .py, .ipynb, .js, .ts, .cpp, .c, .cs, .html, .md, .java, .h, .cshtml, .kt
+```
 Notebooks (.ipynb) are processed using nbformat, extracting markdown and code cells into plain text.
 
 ---
@@ -78,7 +80,6 @@ Notebooks (.ipynb) are processed using nbformat, extracting markdown and code ce
 
 The application uses a Retrieval-Augmented Generation (RAG) pipeline to allow natural language interaction with GitHub codebases:
 
----
 
 ### 1. 🔗 Load GitHub Repo
 
@@ -86,15 +87,11 @@ The application uses a Retrieval-Augmented Generation (RAG) pipeline to allow na
 - Only relevant files (e.g., `.py`, `.js`, `.ipynb`, `.cpp`, `.md`, etc.) are selected based on their extensions.
 - Files are loaded using LangChain's `GithubFileLoader`, which supports batching and filtering.
 
----
-
 ### 2. ✂️ Chunking and Embedding
 
 - Loaded files are split into smaller text chunks using `RecursiveCharacterTextSplitter` or language-specific splitters.
 - Each chunk is embedded into a high-dimensional vector using HuggingFace's `sentence-transformers/all-MiniLM-L6-v2`.
 - All embeddings are stored persistently in a Chroma vector database (`chroma_code_store`).
-
----
 
 ### 3. 💬 Conversational Retrieval
 
