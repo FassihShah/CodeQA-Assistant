@@ -2,7 +2,7 @@
 
 **CodeQA** is an intelligent Streamlit-based assistant that lets you ask natural language questions about any public GitHub repository and get AI-generated answers with context from the codebase. It uses RAG (Retrieval-Augmented Generation) powered by LangChain, HuggingFace models, and Chroma for vector storage.
 
----
+  
 
 ## 🚀 Features
 
@@ -14,7 +14,7 @@
 - **HuggingFace-based LLM** for accurate answers from code
 - Supports code files like `.py`, `.cpp`, `.js`, `.ipynb`, `.md`, and more
 
----
+  
 
 ## 🛠️ Tech Stack
 
@@ -27,7 +27,7 @@
 | Vector Database  | [ChromaDB](https://www.trychroma.com) |
 | GitHub Access    | LangChain's `GithubFileLoader` |
 
----
+  
 
 ## 📦 Installation
 
@@ -56,14 +56,14 @@ Create a .env file and add your GitHub token:
 GITHUB_PERSONAL_ACCESS_TOKEN = your_github_token
 HUGGINGFACEHUB_API_TOKEN = your_huggingface_token
 ```
----
+  
 
 ## ▶️ Running the App
 
 ```bash
 streamlit run app.py
 ```
----
+    
 
 ## 📂 Supported File Types
 
@@ -74,7 +74,7 @@ CodeQA currently loads the following file types from the repo:
 ```
 Notebooks (.ipynb) are processed using nbformat, extracting markdown and code cells into plain text.
 
----
+    
 
 ## 🧠 How It Works
 
@@ -100,7 +100,7 @@ The application uses a Retrieval-Augmented Generation (RAG) pipeline to allow na
 - The prompt is passed to a HuggingFace-hosted LLM (e.g., DeepSeek) using `ChatHuggingFace` to generate a contextual answer.
 - Conversation memory is maintained using `ConversationBufferMemory` to support follow-up questions.
 
----
+    
 
 
 
