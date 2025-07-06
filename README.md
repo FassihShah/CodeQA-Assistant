@@ -70,7 +70,7 @@ streamlit run app.py
 CodeQA currently loads the following file types from the repo:
 
 ```bash
--  .py, .ipynb, .js, .ts, .cpp, .c, .cs, .html, .md, .java, .h, .cshtml, .kt
+ .py, .ipynb, .js, .ts, .cpp, .c, .cs, .html, .md, .java, .h, .cshtml, .kt
 ```
 Notebooks (.ipynb) are processed using nbformat, extracting markdown and code cells into plain text.
 
