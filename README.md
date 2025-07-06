@@ -35,7 +35,7 @@
 
 ```bash
 git clone https://github.com/FassihShah/CodeQA-Assistant
-cd your-repo-name
+cd CodeQA-Assistant
 ```
 2. **Create a virtual environment (optional but recommended)**
 
