@@ -1,17 +1,19 @@
+from langchain_community.vectorstores import Chroma
+from langchain_huggingface import ChatHuggingFace, HuggingFaceEndpoint, HuggingFaceEmbeddings
+from langchain.prompts import PromptTemplate
+from langchain.schema import HumanMessage
+from langchain.memory import ConversationBufferMemory
+
+from load_github_repo import load_all_github_files
+from text_splitting import chunk_code_documents
+from embed_and_store import store_chunks_in_chroma
+
 import streamlit as st
 import atexit
 import shutil
 import os
 import re
 from dotenv import load_dotenv
-from load_github_repo import load_all_github_files
-from text_splitting import chunk_code_documents
-from embed_and_store import store_chunks_in_chroma
-from langchain_community.vectorstores import Chroma
-from langchain_huggingface import ChatHuggingFace, HuggingFaceEndpoint, HuggingFaceEmbeddings
-from langchain.prompts import PromptTemplate
-from langchain.schema import HumanMessage
-from langchain.memory import ConversationBufferMemory
 
 load_dotenv()
 
