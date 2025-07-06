@@ -6,13 +6,13 @@
 
 ## 🚀 Features
 
-- 🔗 **Load any public GitHub repository** by providing its URL and branch
-- 🧠 **RAG-powered question answering** over the codebase
-- 🧾 **Semantic chunking** of code using language-aware text splitters
-- 💬 **Conversational memory** for multi-turn questions
-- 💾 **Persistent vector store** using ChromaDB
-- 🧠 **HuggingFace-based LLM** for accurate answers from code
-- 📘 Supports code files like `.py`, `.cpp`, `.js`, `.ipynb`, `.md`, and more
+- **Load any public GitHub repository** by providing its URL and branch
+- **RAG-powered question answering** over the codebase
+- **Semantic chunking** of code using language-aware text splitters
+- **Conversational memory** for multi-turn questions
+- **Persistent vector store** using ChromaDB
+- **HuggingFace-based LLM** for accurate answers from code
+- Supports code files like `.py`, `.cpp`, `.js`, `.ipynb`, `.md`, and more
 
 ---
 
