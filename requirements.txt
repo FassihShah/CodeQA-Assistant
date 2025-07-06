@@ -1,0 +1,12 @@
+streamlit>=1.28.0
+python-dotenv>=1.0.0
+requests>=2.31.0
+langchain>=0.1.16
+langchain-core>=0.1.50
+langchain-community>=0.0.30
+langchain-huggingface>=0.0.5
+sentence-transformers>=2.2.2
+chromadb>=0.4.24
+nbformat>=5.9.2
+urllib3>=2.2.1
+unstructured>=0.12.6 
