@@ -10,7 +10,7 @@
 - **RAG-powered question answering** over the codebase
 - **Semantic chunking** of code using language-aware text splitters
 - **Conversational memory** for multi-turn questions
-- **Persistent vector store** using ChromaDB
+- **In-memory vector store** using ChromaDB
 - **HuggingFace-based LLM** for accurate answers from code
 - Supports code files like `.py`, `.cpp`, `.js`, `.ipynb`, `.md`, and more
 
@@ -91,7 +91,7 @@ The application uses a Retrieval-Augmented Generation (RAG) pipeline to allow na
 
 - Loaded files are split into smaller text chunks using `RecursiveCharacterTextSplitter` or language-specific splitters.
 - Each chunk is embedded into a high-dimensional vector using HuggingFace's `sentence-transformers/all-MiniLM-L6-v2`.
-- All embeddings are stored persistently in a Chroma vector database (`chroma_code_store`).
+- All embeddings are stored in-memory using Chroma vector database (`chroma_code_store`).
 
 ### 3. 💬 Conversational Retrieval
 
