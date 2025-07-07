@@ -102,8 +102,9 @@ if st.session_state.repo_loaded:
 
             # Remove Extra thinking when using DeepSeek
             response = chat_model.invoke([HumanMessage(content=final_prompt)])
-            match = re.search(r'Answer:\s*(.*)', response.content, re.DOTALL | re.IGNORECASE)
-            answer = match.group(1).strip() if match else response.content.strip()
+            cleaned_response = re.sub(r"<think>.*?</think>", "", response.content, flags=re.DOTALL)
+            match = re.search(r'Answer:\s*(.*)', cleaned_response, re.DOTALL | re.IGNORECASE)
+            answer = match.group(1).strip() if match else cleaned_response.strip()
 
             st.session_state.chat_history.append(("ai", answer))
 
