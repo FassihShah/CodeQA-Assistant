@@ -37,6 +37,11 @@
 <img width="1366" height="634" alt="null" src="https://github.com/user-attachments/assets/a2b19c7e-2a69-4833-afd8-db21725dae52" />
 
 
+https://github.com/user-attachments/assets/eb0e00b0-33c2-499c-b786-c95a028f30f2
+
+
+
+
 ## 📦 Installation
 
 1. **Clone the repository**
