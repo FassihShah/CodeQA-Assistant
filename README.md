@@ -27,7 +27,15 @@
 | Vector Database  | [ChromaDB](https://www.trychroma.com) |
 | GitHub Access    | LangChain's `GithubFileLoader` |
 
-  
+
+## Screenshots
+
+1️⃣
+<img width="1366" height="631" alt="CodeQA" src="https://github.com/user-attachments/assets/4930dcdd-1ae1-463d-a594-fadb81700a9c" />
+
+2️⃣
+<img width="1366" height="634" alt="null" src="https://github.com/user-attachments/assets/a2b19c7e-2a69-4833-afd8-db21725dae52" />
+
 
 ## 📦 Installation
 
